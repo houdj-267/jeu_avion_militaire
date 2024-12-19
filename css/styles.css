@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+h1 {
+  color: darkgoldenrod;
+}
+
+p {
+  color: yellowgreen;
+}
+
+#ecran-demarrage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#jeu {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#carte {
+  position: relative;
+  width: 640px;
+  height: 578px;
+  margin: 0 auto;
+  background-color: #000;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+
+.bonus, .enemi, .obstacle, .avion, .tir, .tir_2,.tir_enemi {
+  position: absolute;
+  border-radius: 40%;
+}
+
+.avion {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+}
+
+.tir, .tir_enemi {
+  width: 10px;
+  height: 20px;
+}
+
+.tir_2{
+  width: 20px;
+  height: 25px;
+}
+
+.enemi, .obstacle {
+  width: 30px;
+  height: 30px;
+  border-radius: 40%;
+}
+
+.bonus {
+  width: 20px;
+  height: 20px;
+}
+
+#menu {
+  display: flex; /* Organiza los elementos en línea */
+  justify-content: space-between; /* Coloca uno a la izquierda y otro a la derecha */
+  align-items: center; /* Centra verticalmente */
+  width: 50%; /* Limita el ancho para que se vea centrado */
+  margin: 0 auto; /* Centra el contenedor en la pantalla */
+  padding: 10px; /* Espacio interior */
+  box-sizing: border-box;
+}
+
+#menu p {
+  margin: 0; /* Elimina márgenes */
+  color: yellowgreen;
+  font-size: 1.2em; /* Ajusta tamaño de letra */
+  margin-left: 30px;
+}
+
+#vies {
+  height: 20px;
+  width: auto; /* Mantén proporción */
+  margin-right: 30px;
+}
+
+#vies img {
+  height: 20px; /* Ajusta tamaño de imagen */
+  width: auto; /* Mantén proporción */
+}
